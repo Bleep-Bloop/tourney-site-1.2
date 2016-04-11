@@ -1,0 +1,27 @@
+{
+  "name": "tourney-final-project",
+  "description": "This project let the user create tournament, choose players and winners.",
+  "main": "",
+  "authors": [
+    "Sukhmanbir Kaur",
+    "Taisen Colcher",
+    "Austin Cameron",
+    "Josh Mineiro"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}

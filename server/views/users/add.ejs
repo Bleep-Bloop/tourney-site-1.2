@@ -1,0 +1,35 @@
+<% include ../partials/header.ejs %>
+<% include ../partials/navbar.ejs %>
+<main class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <h1>Add a new User</h1>
+            <form method="post">
+                <fieldset class="form-group">
+                    <label for="username">Username: *</label>
+                    <input type="text" name="username" class="form-control"  required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="password">Password: *</label>
+                    <input type="password" name="password" class="form-control"  required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="email">Email: *</label>
+                    <input type="email" name="email" class="form-control"  required />
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="displayName">Display Name: *</label>
+                    <input type="text" name="displayName" class="form-control"  required />
+                </fieldset>
+                <fieldset class="form-group text-right">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <a href="/users">
+                    <input type="button" class="btn btn-warning" value="Cancel"/>
+                    </a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</main>
+<% include ../partials/footer.ejs %>
