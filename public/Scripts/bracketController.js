@@ -74,6 +74,14 @@ function generate_bracket()
     }
     
     
+       for(i = 0; i < (numberOfMembers / 2) / 2 /2; i++){
+        var textBox = document.createElement("input");
+        //Give each of the text boxes a unique element
+        textBox.setAttribute("id", numberOfMembers);
+        textBox.setAttribute("style", "background-color: gold;" );
+        document.body.appendChild(textBox);
+        
+    }
     
     
     
