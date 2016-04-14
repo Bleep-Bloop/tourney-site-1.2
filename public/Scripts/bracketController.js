@@ -32,11 +32,19 @@ function generate_bracket()
     
     for(i = 0; i < numberOfMembers; i++){
         var textBox = document.createElement("input");
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
         //Give each of the text boxes a unique element
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: red;" );
         
         
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
         textBox.setAttribute("id", "contestant" + contestantNumber);
         
         document.body.appendChild(textBox);
@@ -47,8 +55,19 @@ function generate_bracket()
         var id = textBox.id;
         alert(id);
         
+<<<<<<< HEAD
         
     }
+=======
+        var button = document.createElement("button");
+        button.setAttribute("class", "fa fa-trophy");
+      
+          button.setAttribute("style", "color: gold;");
+         // button.setAttribute("style", "background-color: white;");
+       // button.innerHTML = button.innerHTML = "test";
+        document.body.appendChild(button);    
+}
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
     
    
    //UNCOMMENT AFTER THIS IS FOR THE NEXT TEIR
@@ -56,11 +75,30 @@ function generate_bracket()
     //give them a seperate id so you can css them differently
      for(i = 0; i < numberOfMembers / 2; i++){
         var textBox = document.createElement("input");
+<<<<<<< HEAD
         //Give each of the text boxes a unique element
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: blue;" );
         document.body.appendChild(textBox);
         
+=======
+        
+        //Give each of the text boxes a unique element
+        textBox.setAttribute("id", numberOfMembers);
+        textBox.setAttribute("style", "background-color: blue;" );
+        
+        
+        document.body.appendChild(textBox);
+        
+        
+        var button = document.createElement("button");
+        button.setAttribute("class", "fa fa-trophy");
+      
+          button.setAttribute("style", "color: gold;");
+       
+       
+        document.body.appendChild(button);    
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
     }
     
     
@@ -71,7 +109,16 @@ function generate_bracket()
         textBox.setAttribute("style", "background-color: green;" );
         document.body.appendChild(textBox);
         
+<<<<<<< HEAD
     }
+=======
+        var button = document.createElement("button");
+        document.body.appendChild(button);
+        button.setAttribute("class", "fa fa-trophy");
+      
+          button.setAttribute("style", "color: gold;");
+            }
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
     
     
        for(i = 0; i < (numberOfMembers / 2) / 2 /2; i++){
@@ -80,7 +127,12 @@ function generate_bracket()
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: gold;" );
         document.body.appendChild(textBox);
+<<<<<<< HEAD
         
+=======
+            
+            
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
     }
     
     

@@ -18,6 +18,10 @@ router.get('/tournaments', function (req, res, next) {
         displayName: req.user ? req.user.displayName : '' });
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46b7b002dc40fa59f43e9206b4693b2465c36030
 /* Test page for building a bracket *
 /* GET user's tournaments page. */
 router.get('/bracket1', function (req, res, next) {
