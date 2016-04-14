@@ -32,9 +32,11 @@ function generate_bracket()
     
     for(i = 0; i < numberOfMembers; i++){
         var textBox = document.createElement("input");
+        
         //Give each of the text boxes a unique element
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: red;" );
+        
         
         
         textBox.setAttribute("id", "contestant" + contestantNumber);
@@ -47,8 +49,14 @@ function generate_bracket()
         var id = textBox.id;
         alert(id);
         
-        
-    }
+        var button = document.createElement("button");
+        button.setAttribute("class", "fa fa-trophy");
+      
+          button.setAttribute("style", "color: gold;");
+         // button.setAttribute("style", "background-color: white;");
+       // button.innerHTML = button.innerHTML = "test";
+        document.body.appendChild(button);    
+}
     
    
    //UNCOMMENT AFTER THIS IS FOR THE NEXT TEIR
@@ -56,11 +64,22 @@ function generate_bracket()
     //give them a seperate id so you can css them differently
      for(i = 0; i < numberOfMembers / 2; i++){
         var textBox = document.createElement("input");
+        
         //Give each of the text boxes a unique element
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: blue;" );
+        
+        
         document.body.appendChild(textBox);
         
+        
+        var button = document.createElement("button");
+        button.setAttribute("class", "fa fa-trophy");
+      
+          button.setAttribute("style", "color: gold;");
+       
+       
+        document.body.appendChild(button);    
     }
     
     
@@ -71,7 +90,12 @@ function generate_bracket()
         textBox.setAttribute("style", "background-color: green;" );
         document.body.appendChild(textBox);
         
-    }
+        var button = document.createElement("button");
+        document.body.appendChild(button);
+        button.setAttribute("class", "fa fa-trophy");
+      
+          button.setAttribute("style", "color: gold;");
+            }
     
     
        for(i = 0; i < (numberOfMembers / 2) / 2 /2; i++){
@@ -80,7 +104,8 @@ function generate_bracket()
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: gold;" );
         document.body.appendChild(textBox);
-        
+            
+            
     }
     
     
