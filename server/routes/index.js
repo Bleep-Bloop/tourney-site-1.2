@@ -18,6 +18,7 @@ router.get('/tournaments', function (req, res, next) {
         displayName: req.user ? req.user.displayName : '' });
 });
 
+<<<<<<< HEAD
 /* Test page for building a bracket *
 /* GET user's tournaments page. */
 router.get('/bracket1', function (req, res, next) {
@@ -27,6 +28,8 @@ router.get('/bracket1', function (req, res, next) {
 });
 
 
+=======
+>>>>>>> 5e8343b47c624a89a210c69f560e9c0de2bdbea2
 /* GET contact page. */
 router.get('/contact', function (req, res, next) {
     req.flash('successmessage', 'Thank You. Your message has been sent.');
