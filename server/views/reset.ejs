@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+<% include partials/navbar.ejs %>
+     <main class="container">
+
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+           <h1>Reset Password</h1>
+           <form method="post">
+                <fieldset class="form-group">
+                    <label>Display Name: <%= displayName %></label>
+                 </fieldset>
+                 <fieldset class="form-group">
+                    <label>New Password:</label>
+                    <input type="password" class="form-control" name="password" required/>
+                </fieldset>
+                <fieldset class="form-group text-right">
+                    <input type="submit" class="btn btn-success" value="Reset"/>
+                    <a href="/">
+                        <input type="button" class="btn btn-warning" value="Cancel"/>
+                    </a>
+               </fieldset>
+            </form>
+         </div> 
+      </div>
+    </main>
+<% include partials/footer.ejs %>
