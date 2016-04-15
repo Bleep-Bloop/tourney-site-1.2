@@ -21,12 +21,11 @@ function generate_bracket()
     var numberOfMembers = text_box1.value;
     
     
-    
-     
     var message = numberOfMembers;
-    
+      
     
     var  contestantNumber = 1;
+    
     //This is temp to check that all the boxes are being created
     results_box.innerHTML = message;
     
@@ -37,38 +36,37 @@ function generate_bracket()
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: red;" );
         
-        
-        
-        textBox.setAttribute("id", "contestant" + contestantNumber);
+     
+        textBox.setAttribute("id", "tier1-" + contestantNumber);
         
         document.body.appendChild(textBox);
         
         var contestantNumber = contestantNumber + 1;
         
-        //Double checking ids this is temporary
+        //TEMP
         var id = textBox.id;
         alert(id);
         
         var button = document.createElement("button");
         button.setAttribute("class", "fa fa-trophy");
       
-          button.setAttribute("style", "color: gold;");
-         // button.setAttribute("style", "background-color: white;");
-       // button.innerHTML = button.innerHTML = "test";
+             button.setAttribute("style", "color: gold;",  "padding-left: 50px;");
+                
+        
         document.body.appendChild(button);    
 }
     
    
-   //UNCOMMENT AFTER THIS IS FOR THE NEXT TEIR
-    //Divide by two to get the next row of text boxes
-    //give them a seperate id so you can css them differently
-     for(i = 0; i < numberOfMembers / 2; i++){
+    //Second Tier
+    for(i = 0; i < numberOfMembers / 2; i++){
         var textBox = document.createElement("input");
         
-        //Give each of the text boxes a unique element
-        textBox.setAttribute("id", numberOfMembers);
+       //Give each of the text boxes a unique element
+        textBox.setAttribute("id", "tier2-" + numberOfMembers);
         textBox.setAttribute("style", "background-color: blue;" );
         
+        var id = textBox.id;
+        alert(id);
         
         document.body.appendChild(textBox);
         
@@ -83,16 +81,21 @@ function generate_bracket()
     }
     
     
+    
+    //Third tier
     for(i = 0; i < (numberOfMembers / 2) / 2; i++){
         var textBox = document.createElement("input");
         //Give each of the text boxes a unique element
-        textBox.setAttribute("id", numberOfMembers);
+        textBox.setAttribute("id", "tier3-" + numberOfMembers);
         textBox.setAttribute("style", "background-color: green;" );
         document.body.appendChild(textBox);
         
         var button = document.createElement("button");
         document.body.appendChild(button);
         button.setAttribute("class", "fa fa-trophy");
+        
+        var id = textBox.id;
+        alert(id);
       
           button.setAttribute("style", "color: gold;");
             }
@@ -103,33 +106,7 @@ function generate_bracket()
         //Give each of the text boxes a unique element
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: gold;" );
-        document.body.appendChild(textBox);
-            
-            
+        document.body.appendChild(textBox);       
     }
-    
-    
-    
 
-
-
-
-
-}
-
-//This was just a tet for creating elements
-function create_textbox() {
-   
-    
-   /*var btn = document.createElement("BUTTON");
-    var t = document.createTextNode("CLICK ME");
-    btn.appendChild(t);
-    document.body.appendChild(btn);*/
-    
-     var textBox = document.createElement("input");
-    //var t = document.createTextNode("CLICK ME");
-    //textBox.appendChild(t);
-    document.body.appendChild(textBox);
-    
-    
 }
