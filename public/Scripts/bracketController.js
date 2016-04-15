@@ -35,7 +35,7 @@ function generate_bracket()
     //TEST TEIR FOR 2-1 stlye iD
         for(i = 0; i < 8; i++){
         var textBox = document.createElement("input");
-        
+
         //Give each of the text boxes a unique element
       //just commented this rn  textBox.setAttribute("id", numberOfMembers);
       //  textBox.setAttribute("style", "background-color: red;" );
@@ -49,6 +49,7 @@ function generate_bracket()
         
         document.body.appendChild(textBox);
         
+
         var contestantNumber = contestantNumber + 1;
         
         //TEMP
@@ -100,6 +101,9 @@ function generate_bracket()
         textBox.setAttribute("id", "tier1");
         
        //    document.getElementById("tier1").style.padding = "50px";
+
+        textBox.setAttribute("id", "contestant" + contestantNumber);
+
         
         document.body.appendChild(textBox);
         
@@ -109,6 +113,10 @@ function generate_bracket()
         //var id = textBox.id;
         //alert(id);
         
+
+        
+    }
+
         var button = document.createElement("button");
         button.setAttribute("class", "fa fa-trophy");
       
@@ -117,12 +125,21 @@ function generate_bracket()
         
         document.body.appendChild(button);    
 }
+
     */
+
    
     //Second Tier
     //for(i = 0l i <numberOfMembers / 2; i++)//this was for second tier when we could select number of members
     for(i = 0; i < 4; i++){
         var textBox = document.createElement("input");
+
+        //Give each of the text boxes a unique element
+        textBox.setAttribute("id", numberOfMembers);
+        textBox.setAttribute("style", "background-color: blue;" );
+        document.body.appendChild(textBox);
+        
+
         
        //Give each of the text boxes a unique element
         //textBox.setAttribute("id", "tier2-" + numberOfMembers);
@@ -147,6 +164,7 @@ function generate_bracket()
         //alert(bid);
        
         document.body.appendChild(button);    
+
     }
     
    
@@ -161,6 +179,9 @@ function generate_bracket()
         
         document.body.appendChild(textBox);
         
+
+    }
+
         var button = document.createElement("button");
         button.setAttribute("id", "idbtn3_" + i );
         document.body.appendChild(button);
@@ -170,20 +191,32 @@ function generate_bracket()
         //alert(id);
       
           button.setAttribute("style", "color: gold;");
+
           
             
         //var id = textBox.id;
         //alert(id);
         
     }
-    
+
+            }
+
     /* 
        for(i = 0; i < 1; i++){
         var textBox = document.createElement("input");
         //Give each of the text boxes a unique element
         textBox.setAttribute("id", numberOfMembers);
         textBox.setAttribute("style", "background-color: gold;" );
+
         document.body.appendChild(textBox);       
+
+        document.body.appendChild(textBox);
+
+            
+
+    }
+    
+
     
 
         //var id = textBox.id;
@@ -192,4 +225,5 @@ function generate_bracket()
     }
 
 */
+
 }
