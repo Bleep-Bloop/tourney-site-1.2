@@ -1346,4 +1346,164 @@ html {
 }
 
 
-/*Taisen Again*/
+#tier1 {
+    background-color: purple;
+    margin: 25px;
+    
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+   
+    
+}
+
+/*WILD CARD TO GET INCREMENTING ID IN THE CREATED  TEXTBOX*/
+input[id^='id_'] {
+     background-color: purple;
+    margin: 25px;
+    
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    }
+
+
+    button[id^='id_']  {
+    background-color: red;
+   /* margin: 25px;
+    
+    
+    float: left;
+    clear: left;
+    width: 50px;
+    */
+    
+    display: block;
+            float: left;
+            height: 20px;
+            margin: 25px; 
+           
+            width: 41px;
+    
+    }
+
+
+
+#id2_0 {
+  
+  background-color: slateblue;  
+    position: absolute;
+    top: 355px;
+    left: 425px;
+  
+    }
+
+#id2_1 {
+  
+  background-color: green;  
+    position: absolute;
+    top: 510px;
+    left: 425px;
+  
+    }
+
+#id2_2 {
+  
+  background-color: yellow;  
+    position: absolute;
+    top: 665px;
+    left: 425px;
+    }
+
+#id2_3 {
+  
+  background-color: black;  
+    position: absolute;
+    top: 820px;
+    left: 425px;
+    }
+
+#idbtn2_0 {
+    /* background-color: lightgoldenrodyellow; */  
+    position: absolute; 
+    top: 357px;
+    left: 595px;
+  
+    
+}
+
+#idbtn2_1 {
+    
+    background-color: blue; 
+    position: absolute; 
+    top: 512px;
+    left: 595px;
+
+}
+
+#idbtn2_2 {
+    
+    background-color: palevioletred; 
+    position: absolute; 
+    top: 667px;
+    left: 595px;
+
+}
+
+
+#idbtn2_3 {
+    
+    background-color: #f44336; 
+    position: absolute; 
+    top: 823px;
+    left: 595px;
+
+}
+
+#id3_0 {
+    
+    background-color: darkcyan;
+    position: absolute; 
+    top: 440px;
+    left: 700px;
+    
+    
+}
+
+
+#id3_1 {
+    
+    background-color: #694a3e;
+    position: absolute; 
+    top: 585px;
+    left: 700px;
+    
+    
+}
+
+#id3_2 {
+    
+    background-color: lime;
+    position: absolute; 
+    top: 735px;
+    left: 700px;
+    
+    
+}
+
+
+#idbtn3_0 {
+    
+    color: #007d71;
+    position: absolute; 
+    top: 440px;
+    left: 760px;
+
+}
+
+
+
