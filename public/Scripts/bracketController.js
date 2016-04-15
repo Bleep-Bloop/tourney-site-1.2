@@ -199,7 +199,7 @@ function generate_bracket()
         
     }
 
-            }
+            
 
     /* 
        for(i = 0; i < 1; i++){
@@ -226,4 +226,3 @@ function generate_bracket()
 
 */
 
-}
