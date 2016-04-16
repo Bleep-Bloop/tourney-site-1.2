@@ -1368,7 +1368,7 @@ input[id^='id_'] {
     float: left;
     clear: left;
     width: 250px;
-    text-align: right;
+    
     }
 
 
@@ -1479,21 +1479,12 @@ input[id^='id_'] {
     
     background-color: #694a3e;
     position: absolute; 
-    top: 585px;
-    left: 700px;
-    
-    
-}
-
-#id3_2 {
-    
-    background-color: lime;
-    position: absolute; 
     top: 735px;
     left: 700px;
     
-    
 }
+
+
 
 
 #idbtn3_0 {
@@ -1501,9 +1492,25 @@ input[id^='id_'] {
     color: #007d71;
     position: absolute; 
     top: 440px;
-    left: 760px;
+    left: 870px;
 
 }
 
+#idbtn3_1 {
+    
+    color: #007d71;
+    position: absolute; 
+    top: 735px;
+    left: 870px;
 
+}
+
+#winnerBox {
+        background-color: gold;
+     
+    position: absolute; 
+    top: 590px;
+    left: 1000px;
+
+}
 
